@@ -17,10 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20.19.0'
-          cache: 'npm'
-      - name: Show node/npm versions
-        run: node -v && npm -v
+          node-version: 16
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
